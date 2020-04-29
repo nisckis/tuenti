@@ -1,0 +1,30 @@
+WC:
+paper -> ryme for the vamp
+hole-> ?
+
+101:
+...
+
+102 mage:
+ingredients
+
+103 ghost:
+pick ring and give
+
+104 poseidon:
+pick crown from vamp (106) and give
+
+105 zombie:
+119
+
+106 vamp:
+LOOK AT THIS CROWN I STOLE IT FOR YOU
+
+107 robot:
+...
+
+108 genie:
+...
+
+
+

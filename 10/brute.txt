@@ -1,0 +1,118 @@
+--------------------
+SENDING emoji :1st_place_medal: -> 🥇
+
+
+
+It's dark inside the castle.
+
+Maybe you can reach to see something with your [1m[31mflashlight[0m...
+
+
+
+🕵 @🏰:~ $ 
+[K🕵 @🏰:~ $ 
+🥇
+-bash: 🥇: command not found
+
+--------------------
+
+--------------------
+SENDING emoji :2nd_place_medal: -> 🥈
+
+🕵 @🏰:~ $ 
+🥇
+
+-bash: 🥇: command not found
+
+🕵 @🏰:~ $ 
+--------------------
+
+--------------------
+SENDING emoji :3rd_place_medal: -> 🥉
+
+🥈
+-bash: 🥈: command not found
+🕵 @🏰:~ $ 
+🥈
+-bash: 🥈: command not found
+
+🕵 @🏰:~ $ 
+🥉
+-bash: 🥉: command not found
+
+--------------------
+
+--------------------
+SENDING emoji :AB_button_(blood_type): -> 🆎
+
+🕵 @🏰:~ $ 
+🥉
+-bash: 🥉: command not found
+
+🕵 @🏰:~ $ 
+🆎
+-bash: 🆎: command not found
+
+--------------------
+
+--------------------
+SENDING emoji :ATM_sign: -> 🏧
+
+🕵 @🏰:~ $ 
+🆎
+-bash: 🆎: command not found
+🕵 @🏰:~ $ 
+🏧
+
+-bash: 🏧: command not found
+
+--------------------
+
+--------------------
+SENDING emoji :A_button_(blood_type): -> 🅰
+
+🕵 @🏰:~ $ 
+🏧
+-bash: 🏧: command not found
+
+🕵 @🏰:~ $ 
+🅰
+-bash: 🅰: command not found
+
+--------------------
+
+--------------------
+SENDING emoji :Afghanistan: -> 🇦🇫
+
+🕵 @🏰:~ $ 
+🅰
+-bash: 🅰: command not found
+🕵 @🏰:~ $ 
+🇦🇫
+
+-bash: 🇦🇫: command not found
+🕵 @🏰:~ $ 
+--------------------
+
+--------------------
+SENDING emoji :Albania: -> 🇦🇱
+
+🇦🇫
+-bash: 🇦🇫: command not found
+🕵 @🏰:~ $ 
+🇦🇱
+
+-bash: 🇦🇱: command not found
+🕵 @🏰:~ $ 
+🇦🇱
+-bash: 🇦🇱: command not found
+
+--------------------
+
+--------------------
+SENDING emoji :Algeria: -> 🇩🇿
+
+🕵 @🏰:~ $ 
+🇩🇿
+-bash: 🇩🇿: command not found
+🕵 @🏰:~ $ 
