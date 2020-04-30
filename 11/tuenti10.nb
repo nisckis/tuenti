@@ -1,0 +1,40 @@
+Notebook[{Cell[
+BoxData[{RowBox[{RowBox[{"h","[",RowBox[{"n_",",","k_"}]," ","]"}],":=",RowBox[
+{"Length","["," ",RowBox[{"Select","[",RowBox[{RowBox[{"IntegerPartitions","[",RowBox[
+{"n",","," ",RowBox[{"{",RowBox[{"2",","," ","n"}],"}"}]}],"]"}],",",RowBox[{RowBox[
+{"ContainsAny","[",RowBox[{"#",","," ",RowBox[{"{","k","}"}]}],"]"}],"&"}]}],"]"}],"]"}]}],"\n",RowBox[
+{RowBox[{RowBox[{"hx","[","x_","]"}],":=",RowBox[{"Length","["," ",RowBox[{"Select","[",RowBox[
+{RowBox[{"IntegerPartitions","[",RowBox[{RowBox[{"x","[",RowBox[{"[","1","]"}],"]"}],","," ",RowBox[
+{"{",RowBox[{"2",","," ",RowBox[{"x","[",RowBox[{"[","1","]"}],"]"}]}],"}"}]}],"]"}],",",RowBox[
+{RowBox[{"ContainsAny","[",RowBox[{"#",","," ",RowBox[{"{",RowBox[{"x","[",RowBox[
+{"[","2","]"}],"]"}],"}"}]}],"]"}],"&"}]}],"]"}],"]"}]}],"\n"}]}],"Input",ExpressionUUID -> "f04604e7-b941-4c7e-9586-617f9c9fa036",
+CellLabel -> "In[60]:= "],Cell[
+CellGroupData[{Cell[
+BoxData[RowBox[{"h","[",RowBox[
+{"100",","," ","2"}],"]"}]],"Input",ExpressionUUID -> "5557bfed-1ab2-45a7-9b8c-2118d0d3afad",
+CellLabel -> "In[69]:= "],Cell[
+BoxData[TemplateBox[{"Cloud","memlimit","\"This computation has exceeded the memory limit for your plan.\"",2,69,10,22156812210728942376,"Local","CloudSystem`Cloud"},
+"MessageTemplate2"],StandardForm],"Message","MSG",ExpressionUUID -> "b63ef8d1-3727-4040-8b43-18d776753bcd"],Cell[
+BoxData[
+"$Aborted",StandardForm],"Output",ExpressionUUID -> "2f9a5d8e-9750-4d6a-8593-171b3d0ef975",
+CellLabel -> "Out[69]= "]},Open],ExpressionUUID -> "a6c6d528-2578-400c-9c81-aa6d5a4883c5"],Cell[
+BoxData[
+{RowBox[{RowBox[{"f","[",RowBox[{"n_",","," ","allowed_"}],"]"}],":=",RowBox[{"IntegerPartitions","[",RowBox[
+{"n",",","Infinity",",","allowed"}],"]"}]}],"\n",RowBox[{RowBox[{"fx","[","x_","]"}],":=",RowBox[
+{"IntegerPartitions","[",RowBox[{RowBox[{"x","[",RowBox[{"[","1","]"}],"]"}],",","Infinity",",",RowBox[
+{"x","[",RowBox[{"[","2","]"}],"]"}]}],"]"}]}],"\n",RowBox[{RowBox[{"g","[",RowBox[
+{"n_",","," ","allowed_"}],"]"}],":=",RowBox[{"Length","[",RowBox[{"IntegerPartitions","[",RowBox[
+{"n",",","Infinity",",","allowed"}],"]"}],"]"}]}],"\n",RowBox[{RowBox[{"gx","[","x_","]"}],":=",RowBox[
+{"Length","[",RowBox[{"IntegerPartitions","[",RowBox[{RowBox[{"x","[",RowBox[{"[","1","]"}],"]"}],",","Infinity",",",RowBox[
+{"x","[",RowBox[{"[","2","]"}],"]"}]}],"]"}],"]"}]}]}],"Input",ExpressionUUID -> "1ad91e91-3874-44bb-8284-aa1ff37576dc",
+CellLabel -> "In[4]:= "],Cell[
+CellGroupData[{Cell[
+BoxData[RowBox[{"MatrixForm","[",RowBox[
+{"Table","[",RowBox[{RowBox[{"Table","[",RowBox[{RowBox[{RowBox[{"Map","[","hx","]"}],"["," ",RowBox[
+{"{",RowBox[{"{",RowBox[{"i",","," ","j"}],"}"}],"}"}],"]"}],",",RowBox[{"{",RowBox[
+{"j",","," ","1",","," ","50"}],"}"}]}],"]"}]," ",","," ",RowBox[{"{",RowBox[{"i",","," ","1",",","50"}],"}"}]}],"]"}],"]"}]],
+"Input",ExpressionUUID -> "3fee66c7-a097-4663-b821-c9418e73ad0c",CellLabel -> "In[68]:= "],Cell[
+BoxData[
+"$Aborted",StandardForm],"Output",ExpressionUUID -> "63b293a9-09ef-4635-872c-e6bbb3bc25b2",
+CellLabel -> "Out[68]= "]},Open],ExpressionUUID -> "7b206103-f52a-44c5-8075-f161f20afa30"]},
+StyleDefinitions -> "Default.nb",FrontEndVersion -> "12.1 for Wolfram Cloud 1.54.2 (March 10, 2020)"]
