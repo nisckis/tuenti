@@ -20,12 +20,13 @@ func main() {
 	check(err)
 
 	defer conn.Close()
+	connbuf := bufio.NewReader(conn)
 
 	wrote := false
 	began := false
 
-	// var round *int
-	connbuf := bufio.NewReader(conn)
+	// teh current round counter
+	// var round int
 
 	for {
 		line, err := connbuf.ReadString('\n')
@@ -47,61 +48,37 @@ func main() {
 		if began && len(line) > 0 {
 			fmt.Println(line)
 			roundData := strings.SplitN(line, ":", 2)
-			// left := roundData[0][6:]
 
 			if len(roundData) < 2 {
 				continue
 			}
 
+			// round, err := strconv.Atoi(roundData[0][6:])
 			try := strings.Split(roundData[1], "ACCEPTED")
 
 			if len(try) < 2 || wrote {
 				continue
 			}
 
+			// this is the id(?)
 			tmp := "{1,9}"
-			prepare := "" // fmt.Sprintf("PREPARE %s -> %d\n", tmp, id)
+
+			// prepare command ?
+			prepare := ""
+			// prepare := fmt.Sprintf("PREPARE %s -> %d\n", tmp, id)
+
+			// accept command ?
 			accept := fmt.Sprintf("%s{id: %s, value: %s} -> 9\n", prepare, tmp, try[1])
 
 			n, err := conn.Write([]byte(accept))
 			check(err)
 
 			if len(accept) != n {
-				panic("could not write entire accept message")
+				fmt.Println("ERROR: could not write message")
+				continue
 			}
+
 			wrote = true
 		}
-
-		// buf := make([]byte, 1024)
-		// n, err := conn.Read(buf)
-		// check(err)
-
-		// if n == 0 {
-		// 	break
-		// }
-
-		// data := strings.Split(string(buf[:n]), "\n")
-
-		// for _, line := range data {
-		// }
-
-		// if !wrote {
-		// 	prepare := "PREPARE {1,9} -> 9\n"
-		// 	n, err = conn.Write([]byte(prepare))
-		// 	check(err)
-
-		// 	if len(prepare) != n {
-		// 		panic("could not write entire prepare message")
-		// 	}
-
-		// 	accept := "ACCEPT {id: {1,9}, value: {servers: [], secret_owner: 9}} -> 9\n"
-		// 	n, err = conn.Write([]byte(accept))
-		// 	check(err)
-
-		// 	if len(accept) != n {
-		// 		panic("could not write entire accept message")
-		// 	}
-		// 	wrote = true
-		// }
 	}
 }
