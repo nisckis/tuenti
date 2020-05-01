@@ -1,0 +1,16 @@
+52.49.91.111 2092
+
+
+Welcome to the SIBYL SYSTEM, node 9 (be mindful of spoilers if you search it)
+
+################################################################################
+
+Since you're new, most of the Paxos protocol operations are automatic.
+
+You're only able to use the PREPARE and ACCEPT commands:
+    PREPARE {<positive_int>,9} -> <dest>
+    ACCEPT {id: {<positive_int>,<positive_int>}, value: {servers: <server_list>, secret_owner: <positive_int>}} -> <dest>
+
+
+PREPARE {1,9} -> 9
+ACCEPT {id: {1,9}, value: {servers: [9,12,20,30,33,34,35,36,37], secret_owner: 30}} -> 9
