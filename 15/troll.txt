@@ -1,0 +1,11 @@
+aardwolf0000 0: 00000000
+aardwolf0000 1: 72080df5
+aardwolf0000 2: 2a2927c9
+admiral0000 0: d202ef8d
+admiral0000 1: 78daa13d
+admiral0000 2: 24c31377
+admiral0000 3: 2f36d283
+admiral0000 4: b5670765
+antelope0000 0: 3c9e51d9
+antelope0000 1: 14dfc526
+antelope0000 2: 23fff51c
