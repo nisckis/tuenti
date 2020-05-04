@@ -13,7 +13,10 @@
 9. Done.
 10. Skipped. 
     
-    Was stuck finding thee echo command. It turns out to be in the `/game/actions` folder. The emoji to echo was [speaking head emoji](https://emojipedia.org/speaking-head/) (🗣️), but the one given in the folder above is different (in terms of unicode chars). The problem was that the other action commands were the same in the folder and the standard...
+    Was stuck finding the (correct) echo command...
+    
+    It turns out that the folder `/game/actions` contains all the avaliable commands/actions. The problem/troll part was that the [speaking head emoji](https://emojipedia.org/speaking-head/) (🗣️ -> bad) is different from the one given in the folder (🗣 -> good). 
+    The funny thing is that the other action commands were the same in the folder and the standard (emojipedia, iemoji, Windows emojis, emojiterra, ...) For example the flashlight, was the [actual flashlight emoji](https://emojipedia.org/flashlight/) (🔦).
 11. Done
 12. Done. 
 
